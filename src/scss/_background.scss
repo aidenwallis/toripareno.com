@@ -1,0 +1,42 @@
+.background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        background-color: rgba(#000, .85);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 30;
+        left: 0;
+        top: 0;
+    }
+
+    &__image {
+        background-color: var(--pt-yellow);
+        background-image: var(--bg-image);
+        background-repeat: no-repeat;
+        z-index: 10;
+        background-size: contain;
+        background-position: bottom center;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        position: fixed;
+    }
+}
+
+@media (max-width: 800px) {
+    .background {
+        &__image {
+            background-size: cover;
+        }
+    }
+}

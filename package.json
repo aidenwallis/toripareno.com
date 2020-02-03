@@ -1,0 +1,20 @@
+{
+  "name": "toripareno.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aidenwallis/toripareno.com.git",
+  "author": "Aiden Wallis <aiden@aidenwallis.co.uk>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "parcel-plugin-static-files-copy": "^2.3.1",
+    "sass": "^1.25.0"
+  }
+}

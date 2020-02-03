@@ -1,0 +1,16 @@
+.container {
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    margin: auto;
+}

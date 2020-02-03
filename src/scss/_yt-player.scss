@@ -1,0 +1,30 @@
+.yt-player {
+    position: absolute;
+    left: 50%;
+    pointer-events: none;
+    top: 50%;
+    z-index: 20;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-50%) translateY(-50%);
+
+    &--has-video {
+        display: block;
+        animation: fadeIn 1s ease-in-out;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .yt-player {
+        width: calc((100vh * 16) / 9);
+        height: 100vh;
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .yt-player {
+        width: 100vw;
+        height: calc((100vw * 9) / 16);
+    }
+}
