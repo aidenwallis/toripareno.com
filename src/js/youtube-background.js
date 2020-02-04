@@ -8,7 +8,7 @@
     }
 
     function onPlayerStateChange(event) {
-        if ((event.data === YT.PlayerState.BUFFERING || event.data === YT.PlayerState.PLAYING) && !playing) {
+        if ((event.data === YT.PlayerState.PLAYING) && !playing) {
             playing = true;
             document.getElementById("yt-player").classList.add("yt-player--has-video");
             document.getElementById("background-image").style.display = "none";
